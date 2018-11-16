@@ -4,7 +4,7 @@
 # @File    : run_test.py
 import unittest
 from function import *
-from BSTestRunner import BSTestRunner
+from HTMLTestRunner import HTMLTestRunner
 import time
 
 report_dir = './test_report'
@@ -18,7 +18,7 @@ report_name = report_dir+'/'+now+'result.html'
 
 print('-----开始生成测试报告-----')
 with open(report_name,'wb') as f:
-    runner = BSTestRunner(stream=f,
+    runner = HTMLTestRunner(stream=f,
                           title="Test Reprot",
                           description="Login test")
     runner.run(discover)

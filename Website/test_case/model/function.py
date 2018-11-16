@@ -5,7 +5,6 @@
 from selenium import webdriver
 import os
 import smtplib
-from BSTestRunner import BSTestRunner
 from email.mime.text import MIMEText
 from email.header import Header
 
